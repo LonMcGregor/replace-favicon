@@ -1,7 +1,7 @@
 {
    "content_scripts": [ {
       "all_frames": false,
-      "js": [ "jquery-1.9.1.min.js", "jquery.md5.js", "URI.min.js", "contentscript.js" ],
+      "js": [ "contentscript.js" ],
       "matches": [ "http://*/*", "https://*/*" ],
       "run_at": "document_idle"
    } ],
@@ -10,13 +10,11 @@
       "128": "replace_jinja_128.png",
       "48": "replace_jinja_48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChPnm1GYxoEkRG0quzHojZaORbQREc+BggNRfU+gpqk9y7I5znxf6CJIgDNKM2E+9qMglESW768GXhESoKwXMKCN+5DTZlSrk1eek/dc4CV6YRDGhXguZnzzz1ZH+t352iztSxDDeiSfOXO+ykkyFSpPSHrH6mLvg5TDYt+FyLywIDAQAB",
    "manifest_version": 2,
    "name": "Replace Missing Favicon",
    "page_action": {
       "default_icon": "replace_jinja_19.png",
       "default_title": "Replace Missing Favicon"
    },
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.4.5"
+   "version": "0.5"
 }
