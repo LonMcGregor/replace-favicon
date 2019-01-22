@@ -2,7 +2,7 @@
    "content_scripts": [ {
       "all_frames": false,
       "js": [ "contentscript.js" ],
-      "matches": [ "http://*/*", "https://*/*" ],
+      "matches": [ "<all_urls>" ],
       "run_at": "document_idle"
    } ],
    "description": "Provides a random gravatar for websites missing a favicon.",
@@ -16,5 +16,9 @@
       "default_icon": "replace_jinja_19.png",
       "default_title": "Replace Missing Favicon"
    },
+   "background": {
+      "scripts": [ "bg.js" ],
+      "persistent": false
+  },
    "version": "0.5"
 }
