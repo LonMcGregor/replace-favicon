@@ -5,7 +5,7 @@
       "matches": [ "<all_urls>" ],
       "run_at": "document_idle"
    } ],
-   "description": "Provides a random gravatar for websites missing a favicon.",
+   "description": "Provides a random jdenticon for websites missing a favicon.",
    "icons": {
       "128": "128.png",
       "48": "48.png"
