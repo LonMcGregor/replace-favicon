@@ -7,15 +7,11 @@
    } ],
    "description": "Provides a random gravatar for websites missing a favicon.",
    "icons": {
-      "128": "replace_jinja_128.png",
-      "48": "replace_jinja_48.png"
+      "128": "128.png",
+      "48": "48.png"
    },
    "manifest_version": 2,
    "name": "Replace Missing Favicon",
-   "page_action": {
-      "default_icon": "replace_jinja_19.png",
-      "default_title": "Replace Missing Favicon"
-   },
    "background": {
       "scripts": [ "bg.js" ],
       "persistent": false
