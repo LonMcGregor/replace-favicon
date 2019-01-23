@@ -34,8 +34,22 @@ function main(){
     provideFavicon();
     return;
   }
-  fetch("favicon.ico").then(response => {
-    if(!response.ok){
+  fetch("/favicon.ico").then(response => {
+    if(response.ok){
+      return {ok:true};
+    } else {
+      return fetch("/favicon.png");
+    }
+  }).then(response => {
+    if(response.ok){
+      return {ok:true};
+    } else {
+      return fetch("/favicon.gif");
+    }
+  }).then(response => {
+    if(response.ok){
+      return {ok:true};
+    } else {
       provideFavicon();
     }
   });
